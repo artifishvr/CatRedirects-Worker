@@ -1,5 +1,5 @@
 {
-  "name": "CatRedirects",
+  "name": "catredirects",
   "scripts": {
     "dev": "wrangler dev src/index.js",
     "deploy": "wrangler deploy --minify src/index.js",
