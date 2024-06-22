@@ -12,8 +12,8 @@
     "hono": "^4.4.7"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240529.0",
     "drizzle-kit": "^0.22.7",
-    "wrangler": "^3.57.2"
+    "wrangler": "^3.57.2",
+    "dotenv": "^16.4.5"
   }
 }
