@@ -1,5 +1,6 @@
 {
   "name": "catredirects",
+  "main": "src/index.js",
   "scripts": {
     "dev": "wrangler dev src/index.js",
     "deploy": "wrangler deploy --minify src/index.js",
