@@ -1,3 +1,4 @@
 name = "catredirects"
 compatibility_date = "2024-05-02"
 main = "src/index.js"
+account_id = "11466916b094dbdf53640afa656a7b45"
