@@ -22,7 +22,7 @@ app.get('*', async (c) => {
 
   if (result[0].url.endsWith('*')) {
     let redirecturl = result[0].url.replace('/*', '')
-    redirecturl = `${redirecturl}/${c.req.path}`
+    redirecturl = `${redirecturl}${c.req.path}`
 
     return c.redirect(redirecturl)
   }
