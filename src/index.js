@@ -20,6 +20,13 @@ app.get('/', async (c) => {
   }
   console.log(c.req.header('host'));
 
+  if (result[0].url.endsWith('*')) {
+    let redirecturl = result[0].url.replace('/*', '')
+    redirecturl = `${redirecturl}/${c.req.path}`
+
+    return c.redirect(redirecturl)
+  }
+
   return c.redirect(result[0].url);
 })
 
