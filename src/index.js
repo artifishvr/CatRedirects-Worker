@@ -6,7 +6,7 @@ import { redirects } from './schema';
 
 const app = new Hono()
 
-app.get('/', async (c) => {
+app.get('*', async (c) => {
   const client = createClient({ url: c.env.DB_URL, authToken: c.env.DB_TOKEN });
 
   const db = drizzle(client);
