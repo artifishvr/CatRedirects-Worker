@@ -16,7 +16,7 @@ app.get('*', async (c) => {
 
 
   if (!result[0]?.url) {
-    return c.text('No redirect found')
+    return c.text('Not found! Go to gaycat.online to claim this domain.')
   }
   console.log(c.req.header('host'));
 
@@ -25,6 +25,10 @@ app.get('*', async (c) => {
     redirecturl = `${redirecturl}${c.req.path}`
 
     return c.redirect(redirecturl)
+  }
+
+  if (result[0].wkPrefix && c.req.path === `/.well-known/${result[0].wkPrefix}`) {
+    return c.text(result[0].wkContent)
   }
 
   return c.redirect(result[0].url);

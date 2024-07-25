@@ -15,6 +15,13 @@
       "when": 1719050369461,
       "tag": "0001_chemical_pandemic",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1721943586339,
+      "tag": "0002_heavy_arclight",
+      "breakpoints": true
     }
   ]
 }
