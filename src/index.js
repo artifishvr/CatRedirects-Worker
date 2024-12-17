@@ -21,7 +21,7 @@ app.get("*", async (c) => {
   }
 
   if (result[0].url == "reserved") {
-    return fetch(c.req);
+    return fetch(c.req.url);
   }
 
   if (result[0].url.endsWith("*")) {
